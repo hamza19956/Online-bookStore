@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Roboto";
+    src: url(assets/fonts/Roboto/Roboto-Regular.ttf)format("truetype");
+    font-family: "Permanent_Marker";
+    src: url(assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf)format("truetype");
+}
+body{
+    font-family: "Roboto";
+}
+h1{
+    font-family: "Permanent_Marker";
+    color: rgb(19, 100, 12);
+}
