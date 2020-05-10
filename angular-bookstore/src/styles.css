@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+
 @font-face {
     font-family: "Roboto";
     src: url(assets/fonts/Roboto/Roboto-Regular.ttf)format("truetype");
@@ -10,5 +14,41 @@ body{
 }
 h1{
     font-family: "Permanent_Marker";
-    color: rgb(19, 100, 12);
+    color:black
 }
+body {
+    padding-top: 56px;
+  }
+
+ .bg-dark{
+     background-color: #2e2b2b !important;
+ } 
+
+ body,html{
+     height: 100%;
+ }
+
+ .footer{
+    position: absolute;
+     bottom: 1%;
+     height: 30px;
+     right: 100px;
+     
+ }
+ .wrapper{
+     min-height: 100%;
+     position: relative;
+ }
+ .title{
+     color: rgb(16, 12, 53);
+ }
+ .content{
+    margin-top: 20px;
+}
+.btnSrch{
+    position: absolute;
+    right: 10px ;
+}
+ 
+
+ 

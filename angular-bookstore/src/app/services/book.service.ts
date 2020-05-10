@@ -8,11 +8,12 @@ import { Book } from '../common/book';
   providedIn: 'root'
 })
 export class BookService {
-  private baseUrl ="http://localhost:8080/api/v1/books";
+  private baseUrl ="http://localhost:8080/api/v1/books"; //We can specify number of data ,20 is defoult
   constructor(private httpClient:HttpClient) { }
 
-  getBooks(): Observable<Book[]> {
-    return this.httpClient.get<getResponseBook>(this.baseUrl).pipe(
+  getBooks(theBookCategory:number): Observable<Book[]> {
+    const searchUrl = `${this.baseUrl}/search/categoryId?id=${theBookCategory}`;
+    return this.httpClient.get<getResponseBook>(searchUrl).pipe(
       map(response => response._embedded.books)
     );
   }
