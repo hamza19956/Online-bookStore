@@ -16,7 +16,7 @@ import java.util.Optional;
 
 //Changing default rest repository path
 //@RepositoryRestResource(collectionResourceRel = "categories",path = "Enter your path")
-@CrossOrigin ("http://localhost:4200") // spec our host ,or for real time project ("*") for multiple host
+//@CrossOrigin ("http://localhost:4200") spec our host ,or for real time project ("*") for multiple host
 
 @Repository
 public interface BookRepository extends JpaRepository<Book,Long> {
